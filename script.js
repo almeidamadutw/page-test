@@ -1,16 +1,16 @@
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  },
-  {
-    threshold: 0.15,
-  }
-);
+const reveals = document.querySelectorAll(".reveal");
 
-document.querySelectorAll(".fade-up").forEach((element) => {
-  observer.observe(element);
-});
+function showOnScroll() {
+  const trigger = window.innerHeight * 0.88;
+
+  reveals.forEach((item) => {
+    const top = item.getBoundingClientRect().top;
+
+    if (top < trigger) {
+      item.classList.add("show");
+    }
+  });
+}
+
+window.addEventListener("scroll", showOnScroll);
+window.addEventListener("load", showOnScroll);
