@@ -6,47 +6,87 @@
   <title>Redesign UCD - Brawl Stars</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-pattern"></div>
+
   <header class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <div class="hero-text">
-        <span class="badge">ETAPA 2 • REDESIGN CENTRADO NO USUÁRIO</span>
-        <h1>
-          Redesign da experiência do <span class="cyan">Brawl Stars</span>
-          com foco em <span class="pink">clareza</span>, organização e eficiência
-        </h1>
-        <p>
-          Esta proposta analisa problemas reais de navegação e organização visual no Brawl Stars,
-          com foco em áreas como catálogo, sistema de amigos, loja e entendimento do fluxo por parte de jogadores frequentes.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#problema" class="btn primary">Ver análise</a>
-          <a href="#redesign" class="btn secondary">Ver redesign</a>
+    <div class="container">
+      <nav class="topbar">
+        <div class="brand">BRAWL UX</div>
+        <div class="top-actions">
+          <a href="#problema" class="top-btn">PROBLEMA</a>
+          <a href="#persona" class="top-btn">PERSONA</a>
+          <a href="#redesign" class="top-btn yellow">REDESIGN</a>
         </div>
-      </div>
+      </nav>
 
-      <div class="hero-panel glass">
-        <div class="hero-mini-label">Aplicação escolhida</div>
-        <h3>Brawl Stars</h3>
-        <p>Plataforma mobile com foco em partidas rápidas, progressão, catálogo de itens, sistema social e loja.</p>
+      <div class="hero-grid">
+        <div class="hero-left">
+          <span class="badge">ETAPA 2 • REDESIGN CENTRADO NO USUÁRIO</span>
+          <h1>
+            REDESIGN DO
+            <span>BRAWL STARS</span>
+          </h1>
+          <p class="hero-text">
+            Proposta de redesign com foco em navegação, catálogo, sistema de amigos e loja,
+            reduzindo confusão visual e melhorando a experiência de jogadores frequentes.
+          </p>
 
-        <div class="hero-stats">
-          <div>
-            <strong>Plataforma</strong>
-            <span>Mobile</span>
+          <div class="hero-buttons">
+            <a href="#problema" class="game-btn yellow-btn">VER ANÁLISE</a>
+            <a href="#redesign" class="game-btn blue-btn">VER REDESIGN</a>
           </div>
-          <div>
-            <strong>Público</strong>
-            <span>Jogadores casuais e frequentes</span>
+
+          <div class="hero-mini-cards">
+            <div class="mini-card">
+              <span>Aplicação</span>
+              <strong>Brawl Stars</strong>
+            </div>
+            <div class="mini-card">
+              <span>Plataforma</span>
+              <strong>Mobile</strong>
+            </div>
+            <div class="mini-card">
+              <span>Foco</span>
+              <strong>UX / Navegação</strong>
+            </div>
           </div>
-          <div>
-            <strong>Foco</strong>
-            <span>Navegação e organização</span>
+        </div>
+
+        <div class="hero-right">
+          <div class="player-panel">
+            <div class="player-top">
+              <div class="player-avatar">FM</div>
+              <div>
+                <h3>FLÁVIO MELO</h3>
+                <p>Jogador frequente • 84k troféus</p>
+              </div>
+            </div>
+
+            <div class="player-stats">
+              <div class="stat-card pink">
+                <span>IDADE</span>
+                <strong>17 anos</strong>
+              </div>
+              <div class="stat-card cyan">
+                <span>PERFIL</span>
+                <strong>Estudante de ADS</strong>
+              </div>
+              <div class="stat-card green">
+                <span>ROTINA</span>
+                <strong>Joga todos os dias</strong>
+              </div>
+              <div class="stat-card yellow">
+                <span>CONTEXTO</span>
+                <strong>Virando influenciador</strong>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -54,117 +94,108 @@
   </header>
 
   <main>
-    <section class="section image-banner">
+    <section class="section banner-section">
       <div class="container">
-        <div class="banner-frame">
-          <img src="images/home-brawl.jpg" alt="Tela inicial do Brawl Stars" />
+        <div class="image-frame big-frame">
+          <img src="images/home-brawl.jpg" alt="Tela inicial do Brawl Stars">
         </div>
       </div>
     </section>
 
     <section id="problema" class="section">
       <div class="container">
-        <span class="section-tag">01 • PROBLEMA IDENTIFICADO</span>
-        <h2>Onde a experiência trava?</h2>
-        <p class="section-text">
-          O principal problema identificado está na desorganização de partes importantes da interface,
-          especialmente no catálogo, na área de amigos e na loja. Para jogadores frequentes, isso torna
-          a navegação menos intuitiva, aumenta o tempo para encontrar funções e causa frustração.
-        </p>
+        <div class="section-header">
+          <span class="section-badge blue-badge">01 • PROBLEMA IDENTIFICADO</span>
+          <h2>ONDE A EXPERIÊNCIA TRAVA?</h2>
+          <p>
+            O principal problema está na desorganização de áreas importantes da interface, como
+            catálogo, sistema de amigos e loja. Isso aumenta a carga cognitiva, dificulta a localização
+            de funções e deixa a navegação menos intuitiva para jogadores frequentes.
+          </p>
+        </div>
 
-        <div class="grid cards-3">
-          <article class="card danger">
-            <h3>Dor principal</h3>
+        <div class="card-grid three">
+          <article class="game-panel pink-panel reveal">
+            <h3>DOR PRINCIPAL</h3>
             <p>
-              O usuário encontra dificuldade para localizar skins, visualizar opções com clareza
-              e navegar por funcionalidades como amigos e filtros.
+              Dificuldade para localizar skins, recursos, amigos e opções importantes de forma rápida.
             </p>
           </article>
 
-          <article class="card warning">
-            <h3>Causa</h3>
+          <article class="game-panel yellow-panel reveal">
+            <h3>CAUSA</h3>
             <p>
-              Excesso de informação visual, organização pouco eficiente e ausência de filtros realmente úteis.
+              Excesso de informação, filtros pouco eficientes e hierarquia visual mal distribuída.
             </p>
           </article>
 
-          <article class="card info">
-            <h3>Impacto</h3>
+          <article class="game-panel blue-panel reveal">
+            <h3>IMPACTO</h3>
             <p>
-              Mais confusão, menor fluidez na navegação e sensação de desorganização em partes do jogo.
+              Mais tempo para concluir tarefas, mais confusão e mais frustração durante a navegação.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt">
+    <section id="persona" class="section alt-section">
       <div class="container">
-        <span class="section-tag pink-tag">02 • PERSONA</span>
-        <h2>Usuário que mais percebe o problema</h2>
+        <div class="section-header">
+          <span class="section-badge pink-badge">02 • PERSONA</span>
+          <h2>USUÁRIO QUE MAIS PERCEBE O PROBLEMA</h2>
+        </div>
 
         <div class="persona-layout">
-          <div class="persona-card">
+          <div class="persona-main game-box reveal">
             <div class="persona-top">
-              <div class="avatar">FM</div>
+              <div class="persona-avatar">FM</div>
               <div>
-                <h3>Flávio Melo</h3>
-                <p>17 anos • Estudante de Análise e Desenvolvimento de Sistemas</p>
+                <h3>FLÁVIO MELO</h3>
+                <p>17 anos • Estudante de análise e desenvolvimento de sistemas</p>
               </div>
             </div>
 
-            <div class="persona-content">
-              <p>
-                Flávio joga Brawl Stars todos os dias, acompanha a evolução do jogo de forma constante
-                e já possui cerca de <strong>84 mil troféus</strong>. Além disso, está começando a se posicionar
-                como influenciador dentro da comunidade, participando de conversas e discussões frequentes
-                sobre mecânicas, organização, skins e atualizações.
-              </p>
+            <p class="persona-description">
+              Flávio joga Brawl Stars constantemente, todos os dias, já possui cerca de 84 mil troféus
+              e acompanha o jogo de forma crítica. Também está começando a se posicionar como influenciador,
+              participando de conversas sobre mecânicas, skins, desbalanceamento e problemas de organização da interface.
+            </p>
 
-              <div class="persona-grid">
-                <div class="persona-box">
-                  <h4>Objetivos</h4>
-                  <p>Encontrar recursos, skins e informações com rapidez, além de ter uma navegação mais organizada.</p>
-                </div>
-
-                <div class="persona-box">
-                  <h4>Frustrações</h4>
-                  <p>Catálogo confuso, sistema de amigos pouco funcional e excesso de elementos visuais competindo entre si.</p>
-                </div>
-
-                <div class="persona-box">
-                  <h4>Motivações</h4>
-                  <p>Melhorar desempenho, acompanhar atualizações do jogo e produzir conteúdo sobre a experiência.</p>
-                </div>
-
-                <div class="persona-box">
-                  <h4>Perfil tecnológico</h4>
-                  <p>Alta familiaridade com tecnologia, jogos competitivos e análise de interface digital.</p>
-                </div>
+            <div class="card-grid two compact">
+              <div class="info-box">
+                <h4>OBJETIVOS</h4>
+                <p>Encontrar amigos, skins, ofertas e funções com rapidez e clareza.</p>
+              </div>
+              <div class="info-box">
+                <h4>FRUSTRAÇÕES</h4>
+                <p>Catálogo confuso, amigos mal organizados, excesso de elementos e filtros fracos.</p>
+              </div>
+              <div class="info-box">
+                <h4>MOTIVAÇÕES</h4>
+                <p>Melhorar no jogo, acompanhar atualizações e produzir conteúdo sobre a experiência.</p>
+              </div>
+              <div class="info-box">
+                <h4>TECNOLOGIA</h4>
+                <p>Alta familiaridade com apps, jogos competitivos e interfaces digitais.</p>
               </div>
             </div>
           </div>
 
           <div class="persona-side">
-            <div class="card glass">
-              <h4>O que ele pensa</h4>
-              <p>
-                “Se eu jogo isso todo dia, não faz sentido algumas coisas continuarem tão difíceis de localizar.”
-              </p>
+            <div class="side-box reveal">
+              <h4>O QUE ELE PENSA</h4>
+              <p>“Se eu uso o jogo todo dia, eu deveria achar essas coisas muito mais fácil.”</p>
             </div>
 
-            <div class="card glass">
-              <h4>O que ele sente</h4>
-              <p>
-                Incômodo com áreas mal organizadas e frustração quando o sistema não facilita tarefas simples.
-              </p>
+            <div class="side-box reveal">
+              <h4>O QUE ELE SENTE</h4>
+              <p>Incômodo e frustração quando funções simples ficam escondidas ou desorganizadas.</p>
             </div>
 
-            <div class="card glass">
-              <h4>Por que essa persona foi escolhida?</h4>
-              <p>
-                Porque representa um jogador experiente, ativo e crítico, que percebe falhas de organização com mais clareza.
-              </p>
+            <div class="side-box reveal">
+              <h4>POR QUE ESSA PERSONA?</h4>
+              <p>Porque representa um jogador ativo, experiente e crítico, que percebe as falhas com mais clareza.</p>
             </div>
           </div>
         </div>
@@ -173,197 +204,223 @@
 
     <section class="section">
       <div class="container">
-        <span class="section-tag">03 • EVIDÊNCIAS VISUAIS</span>
-        <h2>Telas que mostram a dor na prática</h2>
-        <p class="section-text">
-          As imagens abaixo evidenciam pontos em que a interface apresenta excesso de informação,
-          pouca priorização visual e dificuldade de localização.
-        </p>
-
-        <div class="gallery">
-          <div class="gallery-card reveal">
-            <img src="images/amigos.jpg" alt="Tela de amigos do Brawl Stars" />
-            <div class="gallery-caption">
-              <h4>Sistema de amigos</h4>
-              <p>Organização baseada em troféus e opções pouco práticas para encontrar pessoas com facilidade.</p>
-            </div>
-          </div>
-
-          <div class="gallery-card reveal">
-            <img src="images/catalogo.jpg" alt="Tela de catálogo do Brawl Stars" />
-            <div class="gallery-caption">
-              <h4>Catálogo</h4>
-              <p>Ícones, categorias e opções visuais competem pela atenção e tornam a navegação mais cansativa.</p>
-            </div>
-          </div>
-
-          <div class="gallery-card reveal">
-            <img src="images/loja.jpg" alt="Tela da loja do Brawl Stars" />
-            <div class="gallery-caption">
-              <h4>Loja</h4>
-              <p>Muitos blocos promocionais e informações simultâneas reduzem a clareza da experiência.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container">
-        <span class="section-tag pink-tag">04 • JORNADA ATUAL</span>
-        <h2>Como o usuário navega hoje</h2>
-
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <span>1</span>
-            <div>
-              <h4>Entra no jogo</h4>
-              <p>O usuário acessa o menu inicial e tenta encontrar rapidamente a função desejada.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <span>2</span>
-            <div>
-              <h4>Busca catálogo, amigos ou loja</h4>
-              <p>Ele entra em uma área específica esperando encontrar opções claras e organizadas.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <span>3</span>
-            <div>
-              <h4>Enfrenta confusão visual</h4>
-              <p>Muitos elementos aparecem ao mesmo tempo, o que dificulta entender prioridades e caminhos.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <span>4</span>
-            <div>
-              <h4>Conclui a tarefa com esforço</h4>
-              <p>Mesmo conseguindo chegar ao objetivo, a navegação exige mais atenção e tempo do que deveria.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="redesign" class="section redesign">
-      <div class="container">
-        <span class="section-tag">05 • PROPOSTA DE REDESIGN</span>
-        <h2>Como a nova interface pode resolver isso</h2>
-        <p class="section-text">
-          A proposta de redesign reorganiza a hierarquia visual, prioriza funções principais
-          e torna catálogo, sistema de amigos e loja mais objetivos.
-        </p>
-
-        <div class="grid redesign-grid">
-          <div class="prototype-card">
-            <div class="prototype-head">
-              <div>
-                <span class="mini-label">Redesign conceitual</span>
-                <h3>Melhorias sugeridas</h3>
-              </div>
-              <span class="pill">Novo fluxo</span>
-            </div>
-
-            <div class="grid cards-2">
-              <div class="inner-card">
-                <h4>Catálogo com filtros melhores</h4>
-                <p>Separação mais clara por personagem, raridade, preço e favoritos.</p>
-              </div>
-
-              <div class="inner-card">
-                <h4>Amigos com busca funcional</h4>
-                <p>Busca por nome, histórico recente, favoritos e organização mais útil que apenas troféus.</p>
-              </div>
-
-              <div class="inner-card">
-                <h4>Loja com menos poluição</h4>
-                <p>Ofertas principais destacadas sem sobrecarregar o usuário com tantos blocos simultâneos.</p>
-              </div>
-
-              <div class="inner-card">
-                <h4>Navegação mais previsível</h4>
-                <p>Menus com foco em ações principais e feedback visual mais claro.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="side-stack">
-            <div class="card glass">
-              <h3>Princípios de UX aplicados</h3>
-              <div class="tags">
-                <span>Clareza visual</span>
-                <span>Redução de carga cognitiva</span>
-                <span>Eficiência de uso</span>
-                <span>Melhor hierarquia</span>
-                <span>Consistência</span>
-                <span>Feedback ao usuário</span>
-              </div>
-            </div>
-
-            <div class="card glass">
-              <h3>Resultado esperado</h3>
-              <p>
-                Tornar a navegação mais rápida, mais lógica e menos cansativa para jogadores frequentes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <span class="section-tag pink-tag">06 • JORNADA PROPOSTA</span>
-        <h2>Depois do redesign</h2>
-
-        <div class="grid cards-4">
-          <div class="card glass reveal">
-            <h4>Entrada mais limpa</h4>
-            <p>O usuário identifica com mais facilidade o que quer acessar.</p>
-          </div>
-
-          <div class="card glass reveal">
-            <h4>Busca mais objetiva</h4>
-            <p>Filtros e organização ajudam a encontrar amigos, skins e itens com rapidez.</p>
-          </div>
-
-          <div class="card glass reveal">
-            <h4>Menos esforço mental</h4>
-            <p>A hierarquia visual reduz confusão e melhora o foco.</p>
-          </div>
-
-          <div class="card glass reveal">
-            <h4>Experiência mais eficiente</h4>
-            <p>O jogador conclui tarefas com mais fluidez e menor frustração.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container final-layout">
-        <div>
-          <span class="section-tag">07 • CONCLUSÃO</span>
-          <h2>O que essa proposta entrega?</h2>
-          <p class="section-text">
-            O redesign propõe uma experiência mais organizada, clara e funcional para o Brawl Stars,
-            focando em problemas reais percebidos por jogadores experientes. Com isso, a navegação
-            se torna mais intuitiva e eficiente.
+        <div class="section-header">
+          <span class="section-badge yellow-badge">03 • EVIDÊNCIAS VISUAIS</span>
+          <h2>TELAS QUE MOSTRAM A DOR</h2>
+          <p>
+            As imagens abaixo evidenciam excesso de informação, organização pouco eficiente e dificuldade
+            de encontrar funções de forma rápida.
           </p>
         </div>
 
-        <div class="summary-card">
-          <h3>Resumo técnico</h3>
-          <ul>
-            <li>Problema identificado: desorganização visual e navegação pouco intuitiva.</li>
-            <li>Persona: jogador frequente, crítico e experiente.</li>
-            <li>Solução: reorganização de catálogo, amigos e loja.</li>
-            <li>Princípios usados: clareza, eficiência, hierarquia visual e redução da carga cognitiva.</li>
-          </ul>
+        <div class="gallery-grid">
+          <div class="gallery-item reveal">
+            <img src="images/amigos.jpg" alt="Tela de amigos">
+            <div class="gallery-text">
+              <h4>AMIGOS</h4>
+              <p>Busca e organização pouco práticas, com foco em troféus em vez de facilitar localização.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="images/catalogo.jpg" alt="Tela de catálogo">
+            <div class="gallery-text">
+              <h4>CATÁLOGO</h4>
+              <p>Muitas opções, ícones e categorias competindo pela atenção do usuário.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="images/loja.jpg" alt="Tela da loja">
+            <div class="gallery-text">
+              <h4>LOJA</h4>
+              <p>Blocos promocionais excessivos deixam o fluxo visual pesado e cansativo.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="images/skins.jpg" alt="Tela de skins">
+            <div class="gallery-text">
+              <h4>SKINS</h4>
+              <p>A seleção visual poderia ser mais limpa e objetiva para comparação entre opções.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="images/home-2.jpg" alt="Tela inicial 2">
+            <div class="gallery-text">
+              <h4>TELA INICIAL</h4>
+              <p>Muitos elementos simultâneos reduzem a priorização das ações principais.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="images/loja-2.jpg" alt="Tela loja 2">
+            <div class="gallery-text">
+              <h4>OFERTAS</h4>
+              <p>A comunicação visual chama atenção, mas também pode sobrecarregar a navegação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge blue-badge">04 • JORNADA ATUAL</span>
+          <h2>COMO O USUÁRIO NAVEGA HOJE</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-card reveal">
+            <div class="step-number">1</div>
+            <div>
+              <h4>ENTRA NO JOGO</h4>
+              <p>O usuário acessa a tela principal e tenta localizar rapidamente a área desejada.</p>
+            </div>
+          </div>
+
+          <div class="timeline-card reveal">
+            <div class="step-number">2</div>
+            <div>
+              <h4>PROCURA A FUNÇÃO</h4>
+              <p>Vai até catálogo, amigos ou loja esperando encontrar um fluxo claro e organizado.</p>
+            </div>
+          </div>
+
+          <div class="timeline-card reveal">
+            <div class="step-number">3</div>
+            <div>
+              <h4>ENFRENTA CONFUSÃO</h4>
+              <p>Precisa gastar mais atenção para entender filtros, opções, preços e prioridades visuais.</p>
+            </div>
+          </div>
+
+          <div class="timeline-card reveal">
+            <div class="step-number">4</div>
+            <div>
+              <h4>CONCLUI COM ESFORÇO</h4>
+              <p>Mesmo chegando ao objetivo, a jornada exige mais tempo e mais esforço mental.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="redesign" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge pink-badge">05 • PROPOSTA DE REDESIGN</span>
+          <h2>COMO A NOVA INTERFACE RESOLVE ISSO</h2>
+          <p>
+            O redesign reorganiza prioridades visuais, melhora filtros, reduz ruído e torna catálogo,
+            amigos e loja mais objetivos para o jogador.
+          </p>
+        </div>
+
+        <div class="redesign-layout">
+          <div class="game-box reveal">
+            <div class="redesign-top">
+              <h3>MELHORIAS SUGERIDAS</h3>
+              <span class="pill">NOVO FLUXO</span>
+            </div>
+
+            <div class="card-grid two">
+              <div class="improvement-box">
+                <h4>CATÁLOGO MELHOR FILTRADO</h4>
+                <p>Separar por personagem, raridade, preço, favoritos e coleção de forma mais clara.</p>
+              </div>
+
+              <div class="improvement-box">
+                <h4>AMIGOS MAIS FUNCIONAL</h4>
+                <p>Busca por nome, favoritos, recentes e organização além da quantidade de troféus.</p>
+              </div>
+
+              <div class="improvement-box">
+                <h4>LOJA MAIS LIMPA</h4>
+                <p>Reduzir excesso de banners simultâneos e destacar melhor ofertas prioritárias.</p>
+              </div>
+
+              <div class="improvement-box">
+                <h4>NAVEGAÇÃO MAIS PREVISÍVEL</h4>
+                <p>Menos ruído visual e mais clareza sobre o que é ação principal em cada tela.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="redesign-side">
+            <div class="side-box reveal">
+              <h4>PRINCÍPIOS DE UX</h4>
+              <div class="tag-list">
+                <span>Clareza visual</span>
+                <span>Hierarquia</span>
+                <span>Eficiência</span>
+                <span>Feedback</span>
+                <span>Consistência</span>
+                <span>Menos carga cognitiva</span>
+              </div>
+            </div>
+
+            <div class="side-box reveal">
+              <h4>RESULTADO ESPERADO</h4>
+              <p>Navegação mais rápida, menos confusão e experiência mais agradável para jogadores frequentes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge yellow-badge">06 • JORNADA PROPOSTA</span>
+          <h2>DEPOIS DO REDESIGN</h2>
+        </div>
+
+        <div class="card-grid four">
+          <div class="journey-box reveal">
+            <h4>ENTRADA MAIS LIMPA</h4>
+            <p>O jogador identifica mais rápido para onde ir.</p>
+          </div>
+          <div class="journey-box reveal">
+            <h4>BUSCA MAIS RÁPIDA</h4>
+            <p>Filtros melhores facilitam achar skins, amigos e itens.</p>
+          </div>
+          <div class="journey-box reveal">
+            <h4>MENOS RUÍDO VISUAL</h4>
+            <p>A hierarquia visual melhora o foco e a tomada de decisão.</p>
+          </div>
+          <div class="journey-box reveal">
+            <h4>MAIS EFICIÊNCIA</h4>
+            <p>O usuário conclui tarefas com menos esforço e menos frustração.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="final-box reveal">
+          <div class="final-left">
+            <span class="section-badge blue-badge">07 • CONCLUSÃO</span>
+            <h2>O QUE ESSA PROPOSTA ENTREGA?</h2>
+            <p>
+              A proposta torna a experiência do Brawl Stars mais clara, organizada e eficiente,
+              focando em dores reais percebidas por jogadores experientes. Assim, o redesign melhora
+              a navegação e reduz a frustração do usuário.
+            </p>
+          </div>
+
+          <div class="final-right">
+            <h3>RESUMO TÉCNICO</h3>
+            <ul>
+              <li>Problema identificado: desorganização visual e navegação pouco intuitiva.</li>
+              <li>Persona: jogador frequente, ativo e crítico.</li>
+              <li>Solução: melhoria em catálogo, amigos e loja.</li>
+              <li>UX aplicado: clareza, hierarquia visual e redução de carga cognitiva.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
