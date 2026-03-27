@@ -3,280 +3,315 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brawl Stars Redesign</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <title>Redesign UCD - Brawl Stars</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-content">
-      <div class="logo">Brawl <span>Redesign</span></div>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <span class="badge">ETAPA 2 • Redesign Centrado no Usuário</span>
+      <h1>
+        Redesign de experiência com foco em
+        <span class="cyan">clareza</span>,
+        <span class="pink">eficiência</span> e menos fricção
+      </h1>
+      <p>
+        Proposta visual de redesign baseada em UX para analisar o problema,
+        a jornada atual do usuário e apresentar uma solução mais intuitiva.
+      </p>
 
-      <nav class="nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#problemas">Problemas</a>
-        <a href="#solucoes">Soluções</a>
-        <a href="#beneficios">Benefícios</a>
-      </nav>
+      <div class="hero-buttons">
+        <a href="#problema" class="btn primary">Ver análise</a>
+        <a href="#redesign" class="btn secondary">Ver proposta</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text fade-up">
-          <span class="tag">Projeto acadêmico • UCD • UI/UX</span>
-          <h1>Uma nova proposta de experiência para <span>Brawl Stars</span>.</h1>
-          <p class="hero-description">
-            Este projeto apresenta uma proposta de redesign centrado no usuário para o Brawl Stars,
-            com foco em melhorar a navegação, a organização visual e a clareza da interface,
-            tornando a experiência mais intuitiva, moderna e envolvente.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#solucoes" class="btn btn-primary">Ver melhorias</a>
-            <a href="#sobre" class="btn btn-secondary">Sobre o projeto</a>
-          </div>
-
-          <div class="hero-stats">
-            <div class="stat-card">
-              <strong>UI</strong>
-              <span>Interface mais clara e organizada</span>
-            </div>
-
-            <div class="stat-card">
-              <strong>UX</strong>
-              <span>Navegação mais intuitiva</span>
-            </div>
-
-            <div class="stat-card">
-              <strong>UCD</strong>
-              <span>Foco em experiência do usuário</span>
-            </div>
-          </div>
+    <section class="section">
+      <div class="container grid cards-3">
+        <div class="card glass">
+          <p class="label">Aplicação</p>
+          <h3>Brawl Stars</h3>
+          <p>Plataforma mobile com foco em partidas rápidas, progressão e recompensas.</p>
         </div>
 
-        <div class="hero-panel fade-up delay-1">
-          <div class="mockup-card">
-            <div class="mockup-top">
-              <span class="badge">REDESIGN PREVIEW</span>
-              <span class="status">EM ANÁLISE</span>
-            </div>
+        <div class="card glass">
+          <p class="label">Público-alvo</p>
+          <h3>Jovens jogadores</h3>
+          <p>Usuários que procuram diversão rápida, progressão constante e interface simples.</p>
+        </div>
 
-            <div class="screen-box">
-              <div class="screen-header">
-                <div>
-                  <small>Menu principal</small>
-                  <h3>Mais foco no que importa</h3>
-                </div>
-                <span class="rank-badge">UX+</span>
-              </div>
-
-              <div class="screen-cards">
-                <div class="mini-card highlight">
-                  <strong>Eventos</strong>
-                  <p>Melhor destaque visual para modos ativos</p>
-                </div>
-
-                <div class="mini-card">
-                  <strong>Progressão</strong>
-                  <p>Organização mais clara de recompensas</p>
-                </div>
-
-                <div class="mini-card">
-                  <strong>Navegação</strong>
-                  <p>Ações principais mais acessíveis</p>
-                </div>
-              </div>
-
-              <div class="progress-box">
-                <div class="progress-label">
-                  <span>Clareza visual</span>
-                  <span>84%</span>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress-fill"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="card glass wide">
+          <p class="label">Foco do trabalho</p>
+          <h3>Problema real de experiência</h3>
+          <p>
+            O fluxo de progressão e entendimento das recompensas pode gerar confusão,
+            excesso de estímulos e dificuldade para novos usuários entenderem os próximos passos.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="sobre" class="section">
-      <div class="container narrow fade-up">
-        <span class="section-kicker">Sobre o projeto</span>
-        <h2>Redesign centrado no usuário para melhorar a experiência no jogo</h2>
+    <section id="problema" class="section">
+      <div class="container">
+        <p class="section-tag">01 • Problema identificado</p>
+        <h2>Onde a experiência trava?</h2>
         <p class="section-text">
-          Esta proposta foi desenvolvida como parte de uma atividade acadêmica com base em Design Centrado no Usuário (UCD).
-          O objetivo é analisar a interface do Brawl Stars e propor melhorias visuais e funcionais que tornem a experiência
-          mais intuitiva, agradável e eficiente para diferentes perfis de jogadores.
+          O principal ponto de fricção está no excesso de informação visual e na baixa previsibilidade do fluxo,
+          o que aumenta a carga cognitiva e atrapalha a execução da tarefa principal.
         </p>
-      </div>
-    </section>
 
-    <section id="problemas" class="section alt">
-      <div class="container">
-        <div class="section-header fade-up">
-          <span class="section-kicker">Problemas identificados</span>
-          <h2>Pontos da experiência que podem ser melhorados</h2>
-        </div>
+        <div class="grid cards-3">
+          <div class="card red">
+            <h3>Dor principal</h3>
+            <p>O usuário não entende rapidamente a lógica de progressão, recompensas e próximos passos.</p>
+          </div>
 
-        <div class="problem-grid">
-          <article class="problem-card fade-up">
-            <div class="problem-icon">01</div>
-            <h3>Excesso de informação</h3>
-            <p>Algumas telas concentram muitos elementos simultâneos, o que pode dificultar a leitura rápida.</p>
-          </article>
+          <div class="card yellow">
+            <h3>Causa</h3>
+            <p>Hierarquia visual fraca, excesso de estímulos e fluxo pouco guiado.</p>
+          </div>
 
-          <article class="problem-card fade-up delay-1">
-            <div class="problem-icon">02</div>
-            <h3>Hierarquia visual confusa</h3>
-            <p>Nem sempre as ações mais importantes recebem o destaque ideal em relação aos demais elementos.</p>
-          </article>
-
-          <article class="problem-card fade-up delay-2">
-            <div class="problem-icon">03</div>
-            <h3>Navegação pouco fluida</h3>
-            <p>Menus e acessos podem ser reorganizados para tornar a jornada mais natural e intuitiva.</p>
-          </article>
-
-          <article class="problem-card fade-up">
-            <div class="problem-icon">04</div>
-            <h3>Poluição visual em partes da interface</h3>
-            <p>O acúmulo de ícones, cores e blocos pode afetar a clareza, principalmente para novos jogadores.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="solucoes" class="section">
-      <div class="container">
-        <div class="section-header fade-up">
-          <span class="section-kicker">Soluções propostas</span>
-          <h2>Melhorias pensadas para uma experiência mais clara e envolvente</h2>
-          <p class="section-text">
-            As soluções focam em organização, destaque de informações principais e uma navegação mais consistente.
-          </p>
-        </div>
-
-        <div class="solution-grid">
-          <article class="solution-card fade-up">
-            <div class="solution-icon">★</div>
-            <h3>Navegação simplificada</h3>
-            <p>Reorganização de menus e botões para facilitar o acesso às funções mais usadas.</p>
-          </article>
-
-          <article class="solution-card fade-up delay-1">
-            <div class="solution-icon">UI</div>
-            <h3>Melhor hierarquia visual</h3>
-            <p>Elementos principais passam a receber mais contraste, escala e destaque.</p>
-          </article>
-
-          <article class="solution-card fade-up delay-2">
-            <div class="solution-icon">XP</div>
-            <h3>Progressão mais clara</h3>
-            <p>Recompensas, eventos e evolução do jogador organizados de forma mais compreensível.</p>
-          </article>
-
-          <article class="solution-card fade-up">
-            <div class="solution-icon">GO</div>
-            <h3>Acesso rápido aos modos</h3>
-            <p>Modos de jogo e eventos ativos apresentados com mais clareza e prioridade visual.</p>
-          </article>
-
-          <article class="solution-card fade-up delay-1">
-            <div class="solution-icon">ON</div>
-            <h3>Onboarding mais amigável</h3>
-            <p>Melhor adaptação para novos usuários com elementos mais intuitivos e menos sobrecarga.</p>
-          </article>
-
-          <article class="solution-card fade-up delay-2">
-            <div class="solution-icon">FX</div>
-            <h3>Estética mais moderna</h3>
-            <p>Uma proposta visual que mantém a identidade do jogo, mas melhora legibilidade e fluidez.</p>
-          </article>
+          <div class="card blue">
+            <h3>Impacto</h3>
+            <p>Mais confusão, menor eficiência e maior chance de frustração durante a experiência.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section alt">
-      <div class="container comparison-grid">
-        <div class="comparison-card fade-up">
-          <span class="section-kicker">Antes</span>
-          <h3>Experiência mais carregada</h3>
-          <ul>
-            <li>Muitos elementos competindo por atenção</li>
-            <li>Leitura menos imediata</li>
-            <li>Menus mais densos visualmente</li>
-          </ul>
-        </div>
-
-        <div class="comparison-card fade-up delay-1">
-          <span class="section-kicker">Depois</span>
-          <h3>Experiência mais equilibrada</h3>
-          <ul>
-            <li>Foco nas ações principais</li>
-            <li>Mais clareza na navegação</li>
-            <li>Interface mais intuitiva e moderna</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="beneficios" class="section">
       <div class="container">
-        <div class="section-header fade-up">
-          <span class="section-kicker">Benefícios</span>
-          <h2>Resultados esperados com a proposta de redesign</h2>
-        </div>
+        <p class="section-tag pink-tag">02 • Persona</p>
+        <h2>Usuário que mais sofre com o problema</h2>
 
-        <div class="benefit-grid">
-          <div class="benefit-card fade-up">
-            <strong>Melhor usabilidade</strong>
-            <p>Interações mais claras e naturais para usuários novos e recorrentes.</p>
+        <div class="grid persona-grid">
+          <div class="card persona-card">
+            <div class="persona-header">
+              <div class="avatar">LA</div>
+              <div>
+                <h3>Lucas Andrade</h3>
+                <p>17 anos • Estudante • Jogador casual</p>
+              </div>
+            </div>
+
+            <p>
+              Usa o celular em pausas do dia para jogar partidas rápidas. Gosta de competir e evoluir,
+              mas perde o interesse quando a interface não deixa claro o que fazer.
+            </p>
+
+            <div class="persona-block">
+              <h4>Objetivos</h4>
+              <p>Se divertir, evoluir rápido e entender o sistema sem depender de tentativa e erro.</p>
+            </div>
+
+            <div class="persona-block">
+              <h4>Frustrações</h4>
+              <p>Excesso de informação, navegação pouco intuitiva e dificuldade para localizar ações importantes.</p>
+            </div>
+
+            <div class="persona-block">
+              <h4>Motivações</h4>
+              <p>Competição, recompensas e sensação constante de progresso.</p>
+            </div>
+
+            <div class="persona-block">
+              <h4>Familiaridade com tecnologia</h4>
+              <p>Alta. Usa apps com frequência, mas prefere fluxos rápidos e objetivos.</p>
+            </div>
           </div>
 
-          <div class="benefit-card fade-up delay-1">
-            <strong>Menos poluição visual</strong>
-            <p>Organização da interface para facilitar leitura e tomada de decisão.</p>
-          </div>
+          <div class="persona-side">
+            <div class="card glass">
+              <h4>O que ele pensa</h4>
+              <p>“Quero entender logo como evoluir sem ficar adivinhando o que cada parte faz.”</p>
+            </div>
 
-          <div class="benefit-card fade-up delay-2">
-            <strong>Experiência mais fluida</strong>
-            <p>Fluxos mais consistentes e navegação mais eficiente entre telas e funções.</p>
+            <div class="card glass">
+              <h4>O que ele sente</h4>
+              <p>Empolgação no começo, mas irritação quando precisa gastar tempo só tentando entender a interface.</p>
+            </div>
+
+            <div class="card glass">
+              <h4>Por que essa persona é importante?</h4>
+              <p>
+                Porque representa o usuário que mais sofre com a falta de clareza do fluxo.
+                Se a experiência funcionar bem para ele, tende a funcionar melhor para outros perfis também.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-section">
-      <div class="container cta-box fade-up">
-        <span class="section-kicker">Conclusão</span>
-        <h2>Uma proposta visual pensada para unir jogabilidade, clareza e experiência do usuário</h2>
-        <p>
-          Este redesign busca mostrar como UI, UX e UCD podem contribuir para tornar a navegação mais intuitiva
-          sem perder a energia visual e a identidade do jogo.
+    <section class="section">
+      <div class="container">
+        <p class="section-tag">03 • Jornada atual</p>
+        <h2>Fluxo atual e pontos de fricção</h2>
+
+        <div class="grid cards-2">
+          <div class="card glass reveal">
+            <p class="label">Entrada no app</p>
+            <h3>Ação do usuário</h3>
+            <p>O usuário abre o aplicativo e tenta localizar a função principal.</p>
+            <h4>Ponto de frustração</h4>
+            <p>Muitos elementos na tela competem pela atenção.</p>
+          </div>
+
+          <div class="card glass reveal">
+            <p class="label">Exploração</p>
+            <h3>Ação do usuário</h3>
+            <p>Ele navega entre menus tentando entender o fluxo.</p>
+            <h4>Ponto de frustração</h4>
+            <p>A organização da informação não deixa claro por onde começar.</p>
+          </div>
+
+          <div class="card glass reveal">
+            <p class="label">Execução da tarefa</p>
+            <h3>Ação do usuário</h3>
+            <p>Tenta concluir a ação desejada.</p>
+            <h4>Ponto de frustração</h4>
+            <p>Há excesso de etapas e pouco feedback visual.</p>
+          </div>
+
+          <div class="card glass reveal">
+            <p class="label">Conclusão</p>
+            <h3>Ação do usuário</h3>
+            <p>Finaliza a tarefa com insegurança.</p>
+            <h4>Ponto de frustração</h4>
+            <p>Não fica claro se a ação foi concluída com sucesso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="redesign" class="section redesign">
+      <div class="container">
+        <p class="section-tag pink-tag">04 • Proposta de redesign</p>
+        <h2>Como a nova interface resolve a dor</h2>
+        <p class="section-text">
+          A proposta reorganiza a navegação, destaca a ação principal, diminui a poluição visual
+          e cria um fluxo mais previsível, com feedback mais claro ao longo da jornada.
         </p>
 
-        <div class="hero-buttons">
-          <a href="#sobre" class="btn btn-primary">Revisar projeto</a>
-          <a href="#" class="btn btn-secondary">Ver protótipo</a>
+        <div class="grid redesign-grid">
+          <div class="card prototype">
+            <div class="prototype-top">
+              <div>
+                <p class="label">Protótipo conceitual</p>
+                <h3>Home com foco na tarefa principal</h3>
+              </div>
+              <span class="mini-badge">Novo fluxo</span>
+            </div>
+
+            <div class="grid cards-2 small-gap">
+              <div class="card inner-card">
+                <p class="label cyan-text">Passo 1</p>
+                <h4>Entrada simplificada</h4>
+                <p>O usuário identifica rapidamente qual ação deve realizar primeiro.</p>
+              </div>
+
+              <div class="card inner-card">
+                <p class="label pink-text">Passo 2</p>
+                <h4>Progressão visível</h4>
+                <p>Elementos de progresso e recompensa ficam mais claros e menos dispersos.</p>
+              </div>
+
+              <div class="card inner-card">
+                <p class="label cyan-text">Passo 3</p>
+                <h4>Feedback imediato</h4>
+                <p>A interface confirma ações e reduz insegurança durante o uso.</p>
+              </div>
+
+              <div class="card inner-card">
+                <p class="label pink-text">Passo 4</p>
+                <h4>Conclusão clara</h4>
+                <p>O usuário entende com facilidade que concluiu a tarefa com sucesso.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="side-stack">
+            <div class="card glass">
+              <h3>Wireframes sugeridos</h3>
+              <ul>
+                <li>Home simplificada com destaque para a ação principal</li>
+                <li>Fluxo reorganizado em passos curtos e diretos</li>
+                <li>Cards visuais para orientar a decisão do usuário</li>
+                <li>Feedback visível ao completar a tarefa</li>
+              </ul>
+            </div>
+
+            <div class="card glass">
+              <h3>Princípios de UX aplicados</h3>
+              <div class="tags">
+                <span>Clareza da interface</span>
+                <span>Redução de carga cognitiva</span>
+                <span>Consistência visual</span>
+                <span>Feedback ao usuário</span>
+                <span>Eficiência de uso</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-tag">05 • Jornada proposta</p>
+        <h2>Depois do redesign</h2>
+
+        <div class="grid cards-4">
+          <div class="card glass">
+            <p class="label">Entrada guiada</p>
+            <p>Tela inicial mais limpa, com foco na ação principal.</p>
+          </div>
+
+          <div class="card glass">
+            <p class="label">Navegação objetiva</p>
+            <p>Hierarquia visual melhorada e caminho mais previsível.</p>
+          </div>
+
+          <div class="card glass">
+            <p class="label">Execução simplificada</p>
+            <p>Menos etapas, mais clareza e feedback em tempo real.</p>
+          </div>
+
+          <div class="card glass">
+            <p class="label">Conclusão clara</p>
+            <p>Mensagens visuais confirmam o sucesso da ação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container final-grid">
+        <div>
+          <p class="section-tag pink-tag">06 • Conclusão</p>
+          <h2>O que essa nova versão entrega?</h2>
+          <p class="section-text">
+            A solução proposta torna o fluxo mais compreensível, reduz a frustração do usuário
+            e melhora a eficiência da experiência, mostrando na prática como o Design Centrado no Usuário
+            pode transformar um produto digital.
+          </p>
+        </div>
+
+        <div class="card summary">
+          <h3>Resumo técnico</h3>
+          <ul>
+            <li>Problema identificado: fluxo confuso e excesso de informação.</li>
+            <li>Causa principal: baixa hierarquia visual e pouca orientação.</li>
+            <li>Solução: reorganização do fluxo e clareza na navegação.</li>
+            <li>Resultado esperado: menos carga cognitiva e mais eficiência de uso.</li>
+          </ul>
         </div>
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Brawl Stars Redesign • Projeto acadêmico desenvolvido por Maria Eduarda</p>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
