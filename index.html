@@ -80,8 +80,8 @@
                 <strong>Estudante de ADS</strong>
               </div>
               <div class="stat-card green">
-                <span>ROTINA</span>
-                <strong>Joga todos os dias</strong>
+                <span>LOCALIZAÇÃO</span>
+                <strong>Rio de Janeiro</strong>
               </div>
               <div class="stat-card yellow">
                 <span>CONTEXTO</span>
@@ -103,6 +103,38 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge yellow-badge">00 • APLICAÇÃO ESCOLHIDA</span>
+          <h2>IDENTIFICAÇÃO DO APLICATIVO</h2>
+          <p>
+            Aplicação escolhida: <strong>Brawl Stars</strong>. Plataforma: <strong>mobile</strong>.
+            Trata-se de um jogo competitivo com partidas rápidas, progressão constante, catálogo de itens,
+            sistema social, loja e recursos de desempenho. O público-alvo principal envolve jogadores casuais
+            e frequentes, especialmente usuários jovens que buscam evolução, personalização e interação competitiva. :contentReference[oaicite:3]{index=3}
+          </p>
+        </div>
+
+        <div class="card-grid three">
+          <article class="game-panel blue-panel reveal">
+            <h3>PÚBLICO-ALVO</h3>
+            <p>Jogadores mobile, principalmente jovens, que valorizam progressão, competição e personalização.</p>
+          </article>
+
+          <article class="game-panel pink-panel reveal">
+            <h3>PRINCIPAIS FUNÇÕES</h3>
+            <p>Catálogo, loja, sistema de amigos, rankings, progressão, visuais, ofertas e recursos competitivos.</p>
+          </article>
+
+          <article class="game-panel yellow-panel reveal">
+            <h3>CONTEXTO DE USO</h3>
+            <p>Uso frequente, navegação rápida pelo celular e contato constante com menus, filtros e recompensas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="problema" class="section">
       <div class="container">
         <div class="section-header">
@@ -112,7 +144,7 @@
             O principal problema está na desorganização de áreas importantes da interface, como catálogo,
             sistema de amigos, loja e navegação competitiva. Além disso, funções que antes eram acessadas
             de forma direta passaram a exigir mais etapas, como o acesso à liderança de brawlers.
-            Isso aumenta a carga cognitiva, dificulta a navegação e torna a experiência menos intuitiva.
+            Isso aumenta a carga cognitiva, dificulta a navegação e torna a experiência menos intuitiva. :contentReference[oaicite:4]{index=4}
           </p>
         </div>
 
@@ -147,23 +179,32 @@
         <div class="section-header">
           <span class="section-badge pink-badge">02 • PERSONA</span>
           <h2>USUÁRIO QUE MAIS PERCEBE O PROBLEMA</h2>
+          <p>
+            A persona precisa apresentar identificação básica, localização, contexto, objetivos,
+            frustrações, motivações, familiaridade com tecnologia e também foto. 
+          </p>
         </div>
 
         <div class="persona-layout">
           <div class="persona-main game-box reveal">
-            <div class="persona-top">
-              <div class="persona-avatar">FM</div>
+            <div class="persona-top" style="align-items: center;">
+              <img
+                src="images/flavio.jpg"
+                alt="Foto da persona Flávio Melo"
+                style="width: 110px; height: 110px; border-radius: 24px; object-fit: cover; border: 4px solid #65184d; box-shadow: 0 8px 0 rgba(0,0,0,0.28);"
+              />
               <div>
                 <h3>FLÁVIO MELO</h3>
-                <p>17 anos • Estudante de análise e desenvolvimento de sistemas</p>
+                <p>17 anos • Estudante de análise e desenvolvimento de sistemas • Rio de Janeiro</p>
               </div>
             </div>
 
             <p class="persona-description">
-              Joga Brawl Stars constantemente, todos os dias, já possui cerca de 84 mil troféus
+              Flávio joga Brawl Stars constantemente, todos os dias, já possui cerca de 84 mil troféus
               e acompanha o jogo de forma crítica. Também está começando a se posicionar como influenciador,
               participando de conversas sobre mecânicas, skins, loja, liderança, desbalanceamento e
-              problemas de navegação.
+              problemas de navegação. Usa o jogo com frequência alta e percebe rapidamente quando uma função
+              deixa de ser intuitiva.
             </p>
 
             <div class="card-grid two compact">
@@ -225,7 +266,7 @@
             <img src="images/amigos.jpg" alt="Tela de amigos do jogo" />
             <div class="gallery-content">
               <h4>AMIGOS</h4>
-              <p>Organização pouco prática e difícil de navegar.</p>
+              <p>Busca e organização pouco práticas, com foco em troféus em vez de facilitar localização.</p>
             </div>
           </div>
 
@@ -233,7 +274,7 @@
             <img src="images/catalogo.jpg" alt="Tela de catálogo do jogo" />
             <div class="gallery-content">
               <h4>CATÁLOGO</h4>
-              <p>Muitas opções competindo visualmente.</p>
+              <p>Muitas opções, ícones e categorias competindo pela atenção do usuário.</p>
             </div>
           </div>
 
@@ -241,7 +282,7 @@
             <img src="images/loja.jpg" alt="Tela da loja do jogo" />
             <div class="gallery-content">
               <h4>LOJA</h4>
-              <p>Excesso de promoções e informação.</p>
+              <p>Blocos promocionais excessivos deixam o fluxo visual pesado e cansativo.</p>
             </div>
           </div>
 
@@ -249,7 +290,7 @@
             <img src="images/ofertas.jpg" alt="Tela de ofertas do jogo" />
             <div class="gallery-content">
               <h4>OFERTAS</h4>
-              <p>Blocos promocionais e visuais chamativos podem dificultar a comparação entre opções.</p>
+              <p>Comunicação visual forte, mas com comparação menos fluida entre opções.</p>
             </div>
           </div>
 
@@ -257,7 +298,7 @@
             <img src="images/home-brawl.jpg" alt="Tela inicial do jogo" />
             <div class="gallery-content">
               <h4>TELA INICIAL</h4>
-              <p>Muitos elementos ao mesmo tempo.</p>
+              <p>Muitos elementos ao mesmo tempo reduzem a priorização das ações principais.</p>
             </div>
           </div>
 
@@ -265,7 +306,7 @@
             <img src="images/lideranca.jpg" alt="Tela de liderança do jogo" />
             <div class="gallery-content">
               <h4>LIDERANÇA</h4>
-              <p>Acesso mais complexo que antes, exigindo mais etapas.</p>
+              <p>O acesso à liderança de brawlers ficou menos direto, exigindo mais etapas.</p>
             </div>
           </div>
 
@@ -273,7 +314,7 @@
             <img src="images/visuais-loja.jpg" alt="Tela de visuais da loja" />
             <div class="gallery-content">
               <h4>VISUAIS</h4>
-              <p>Interface chamativa, mas com excesso visual.</p>
+              <p>Interface chamativa, mas ainda com excesso visual e leitura cansativa.</p>
             </div>
           </div>
         </div>
@@ -283,54 +324,101 @@
     <section class="section alt-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge blue-badge">04 • JORNADA ATUAL</span>
+          <span class="section-badge blue-badge">04 • MAPA DA JORNADA ATUAL</span>
           <h2>COMO O USUÁRIO NAVEGA HOJE</h2>
+          <p>
+            O mapa da jornada atual precisa mostrar etapa, ação, pensamento, emoção, ponto de contato
+            e ponto de frustração. 
+          </p>
         </div>
 
-        <div class="timeline">
-          <div class="timeline-card reveal">
-            <div class="step-number">1</div>
-            <div>
-              <h4>ENTRA NO JOGO</h4>
-              <p>O jogador acessa a interface e busca rapidamente uma função.</p>
+        <div class="card-grid two">
+          <div class="game-box reveal">
+            <h3 style="margin-bottom: 16px;">ETAPA 1 • ENTRADA</h3>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>AÇÃO</h4><p>Entra no jogo e tenta localizar rapidamente a função desejada.</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>PENSAMENTO</h4><p>“Quero chegar logo no que eu preciso sem ficar procurando.”</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>EMOÇÃO</h4><p>Expectativa e agilidade.</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>PONTO DE CONTATO</h4><p>Tela inicial do jogo.</p></div>
+            <div class="info-box"><h4>PONTO DE FRUSTRAÇÃO</h4><p>Muitos elementos visuais concorrem pela atenção logo no início.</p></div>
+          </div>
+
+          <div class="game-box reveal">
+            <h3 style="margin-bottom: 16px;">ETAPA 2 • BUSCA</h3>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>AÇÃO</h4><p>Vai até catálogo, amigos, loja ou rankings.</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>PENSAMENTO</h4><p>“Isso deveria estar mais fácil de encontrar.”</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>EMOÇÃO</h4><p>Leve incômodo.</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>PONTO DE CONTATO</h4><p>Menus internos, botões e abas do sistema.</p></div>
+            <div class="info-box"><h4>PONTO DE FRUSTRAÇÃO</h4><p>Busca pouco objetiva, excesso de opções e baixa hierarquia visual.</p></div>
+          </div>
+
+          <div class="game-box reveal">
+            <h3 style="margin-bottom: 16px;">ETAPA 3 • EXECUÇÃO</h3>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>AÇÃO</h4><p>Tenta concluir a tarefa, como comparar ofertas ou acessar liderança.</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>PENSAMENTO</h4><p>“Antes isso parecia mais direto.”</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>EMOÇÃO</h4><p>Frustração e esforço mental.</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>PONTO DE CONTATO</h4><p>Catálogo, loja, rankings e sistema competitivo.</p></div>
+            <div class="info-box"><h4>PONTO DE FRUSTRAÇÃO</h4><p>Mais etapas do que o esperado e caminhos menos diretos para funções importantes.</p></div>
+          </div>
+
+          <div class="game-box reveal">
+            <h3 style="margin-bottom: 16px;">ETAPA 4 • CONCLUSÃO</h3>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>AÇÃO</h4><p>Consegue chegar ao objetivo após navegar por várias telas.</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>PENSAMENTO</h4><p>“Deu certo, mas poderia ter sido muito mais rápido.”</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>EMOÇÃO</h4><p>Alívio misturado com insatisfação.</p></div>
+            <div class="info-box" style="margin-bottom: 14px;"><h4>PONTO DE CONTATO</h4><p>Telas finais de catálogo, ofertas ou ranking.</p></div>
+            <div class="info-box"><h4>PONTO DE FRUSTRAÇÃO</h4><p>Baixa eficiência na execução da tarefa.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge pink-badge">05 • WIREFRAMES (LOW FIDELITY)</span>
+          <h2>ESBOÇOS DA SOLUÇÃO</h2>
+          <p>
+            A proposta de redesign deve incluir wireframes low fidelity mostrando organização da interface,
+            fluxo de interação e mudanças propostas. 
+          </p>
+        </div>
+
+        <div class="card-grid three">
+          <div class="game-box reveal">
+            <h3>WIREFRAME 1</h3>
+            <div class="info-box" style="margin-top: 14px;">
+              <h4>HOME REORGANIZADA</h4>
+              <p>Menu principal com menos ruído visual, foco nas ações mais usadas e melhor separação de áreas.</p>
             </div>
           </div>
 
-          <div class="timeline-card reveal">
-            <div class="step-number">2</div>
-            <div>
-              <h4>TENTA NAVEGAR</h4>
-              <p>Vai até catálogo, loja ou sistema competitivo.</p>
+          <div class="game-box reveal">
+            <h3>WIREFRAME 2</h3>
+            <div class="info-box" style="margin-top: 14px;">
+              <h4>CATÁLOGO COM FILTROS</h4>
+              <p>Separação por personagem, preço, favoritos e coleção, com navegação mais previsível.</p>
             </div>
           </div>
 
-          <div class="timeline-card reveal">
-            <div class="step-number">3</div>
-            <div>
-              <h4>ENFRENTA MAIS ETAPAS</h4>
-              <p>Algumas funções, como liderança, exigem mais cliques do que antes.</p>
-            </div>
-          </div>
-
-          <div class="timeline-card reveal">
-            <div class="step-number">4</div>
-            <div>
-              <h4>CONCLUI COM ESFORÇO</h4>
-              <p>O usuário chega ao objetivo, mas com mais esforço e menos fluidez.</p>
+          <div class="game-box reveal">
+            <h3>WIREFRAME 3</h3>
+            <div class="info-box" style="margin-top: 14px;">
+              <h4>ATALHO PARA LIDERANÇA</h4>
+              <p>Retorno de acesso mais direto aos rankings e informações competitivas dos brawlers.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="redesign" class="section">
+    <section id="redesign" class="section alt-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge pink-badge">05 • PROPOSTA DE REDESIGN</span>
-          <h2>COMO A NOVA INTERFACE RESOLVE ISSO</h2>
+          <span class="section-badge pink-badge">06 • PROTÓTIPO (HIGH FIDELITY)</span>
+          <h2>PROPOSTA DE REDESIGN</h2>
           <p>
-            O redesign reorganiza prioridades visuais, melhora filtros, reduz ruído e torna catálogo,
-            amigos, loja e navegação competitiva mais objetivos para o jogador.
+            Esta página funciona como o protótipo high fidelity da solução, apresentando visual,
+            estrutura, organização de conteúdo e proposta de reorganização do fluxo. 
           </p>
         </div>
 
@@ -386,11 +474,15 @@
       </div>
     </section>
 
-    <section class="section alt-section">
+    <section class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge yellow-badge">06 • JORNADA PROPOSTA</span>
+          <span class="section-badge yellow-badge">07 • MAPA DA JORNADA PROPOSTA</span>
           <h2>DEPOIS DO REDESIGN</h2>
+          <p>
+            O novo mapa da jornada deve evidenciar redução do número de etapas, melhoria da navegação,
+            redução da frustração e maior eficiência. 
+          </p>
         </div>
 
         <div class="card-grid four">
@@ -414,16 +506,19 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section alt-section">
       <div class="container">
         <div class="final-box reveal">
           <div class="final-left">
-            <span class="section-badge blue-badge">07 • CONCLUSÃO</span>
+            <span class="section-badge blue-badge">08 • CONCLUSÃO</span>
             <h2>O QUE ESSA PROPOSTA ENTREGA?</h2>
             <p>
-              A proposta torna a experiência do Brawl Stars mais clara, organizada e eficiente,
-              focando em dores reais percebidas por jogadores experientes. Assim, o redesign melhora
-              a navegação e reduz a frustração do usuário.
+              O problema identificado foi a desorganização visual somada ao aumento de etapas para acessar
+              funções importantes, como a liderança de brawlers. As causas principais envolvem excesso de
+              informação, baixa hierarquia visual e falta de atalhos eficientes. O redesign resolve essa dor
+              ao reorganizar catálogo, loja, amigos e acessos competitivos, aplicando princípios de UX como
+              clareza da interface, redução de carga cognitiva, consistência visual, feedback ao usuário e
+              eficiência de uso. 
             </p>
           </div>
 
@@ -431,7 +526,7 @@
             <h3>RESUMO TÉCNICO</h3>
             <ul>
               <li>Problema identificado: desorganização visual e caminhos mais longos para certas funções.</li>
-              <li>Persona: jogador frequente, ativo e crítico.</li>
+              <li>Persona: jogador frequente, ativo, crítico e localizado no Rio de Janeiro.</li>
               <li>Solução: melhoria em catálogo, amigos, loja e acesso à liderança.</li>
               <li>UX aplicado: clareza, hierarquia visual, eficiência e redução de carga cognitiva.</li>
             </ul>
